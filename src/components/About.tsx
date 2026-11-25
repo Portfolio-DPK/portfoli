@@ -81,12 +81,24 @@ export const About: React.FC = () => {
             <br />
             {profileData.name}
           </h3>
-          <a
-            href={profileData.cvUrl}
-            className="mt-8 inline-flex items-center gap-2 rounded-lg bg-[#2563eb] px-5 py-3 text-sm font-bold text-white transition hover:bg-[#1d4ed8] hover:-translate-y-0.5 active:translate-y-0"
-          >
-            <FileText className="w-4 h-4" /> View CV
-          </a>
+          <div className="mt-8 flex flex-wrap justify-center gap-3 lg:justify-start">
+            <a
+              href={profileData.cvUrlVi}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 rounded-lg bg-[#2563eb] px-5 py-3 text-sm font-bold text-white transition hover:bg-[#1d4ed8] hover:-translate-y-0.5 active:translate-y-0"
+            >
+              <FileText className="w-4 h-4" /> CV Tiếng Việt
+            </a>
+            <a
+              href={profileData.cvUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 rounded-lg border border-[#2563eb] bg-white/[0.04] px-5 py-3 text-sm font-bold text-white transition hover:bg-[#2563eb]/20 hover:-translate-y-0.5 active:translate-y-0"
+            >
+              <FileText className="w-4 h-4" /> CV English
+            </a>
+          </div>
         </div>
 
         <div className="order-1 lg:order-2 flex justify-center">

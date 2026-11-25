@@ -24,6 +24,7 @@ export interface ProfileData {
   shortName: string;
   avatar: string;
   cvUrl: string;
+  cvUrlVi: string;
   status: string;
   availableForWork: boolean;
   typewriterRoles: string[];
@@ -54,7 +55,8 @@ export const profileData: ProfileData = {
   avatar: "/images/avatar.svg",
   
   // Link tải CV (đặt file pdf trong thư mục public/ hoặc link Google Drive)
-  cvUrl: "/DoPhucKhang_CV_EN.pdf", // bản tiếng Việt: /DoPhucKhang_CV_VI.pdf
+  cvUrl: "/DoPhucKhang_CV_EN.pdf",
+  cvUrlVi: "/DoPhucKhang_CV_VI.pdf",
   
   // Trạng thái công việc hiện tại
   status: "Đang tìm vị trí thực tập BA / AI BA",

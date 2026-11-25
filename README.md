@@ -6,7 +6,7 @@ Sinh viên Hệ thống thông tin quản lý, chuyên ngành Kinh doanh số v�
 
 *Personal portfolio of Đỗ Phúc Khang, a Management Information Systems student looking for a Business Analyst / AI Business Analyst internship.*
 
-- 🌐 Website: *(đang cập nhật, link Vercel sẽ có ở đây)*
+- 🌐 Website: [portfolio-dophuckhang.vercel.app](https://portfolio-dophuckhang.vercel.app/)
 - 📄 CV: [Tiếng Việt](public/DoPhucKhang_CV_VI.pdf) · [English](public/DoPhucKhang_CV_EN.pdf)
 - 💼 LinkedIn: [linkedin.com/in/khang-đỗ-phúc](https://www.linkedin.com/in/khang-%C4%91%E1%BB%97-ph%C3%BAc-868b38451/)
 - 🐙 GitHub: [github.com/phuckhang2903](https://github.com/phuckhang2903)
