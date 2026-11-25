@@ -35,6 +35,32 @@ export const projectCategories = [
 
 export const projectsData: ProjectItem[] = [
   {
+    id: "uni-bridge",
+    title: "UNI-BRIDGE — Kết nối dự án thực tế giữa sinh viên và doanh nghiệp",
+    subtitle: "Đồ án môn Phân tích thiết kế hệ thống (UEL, 03/2026)",
+    description:
+      "Phân tích và thiết kế hệ thống giúp doanh nghiệp đăng dự án ngắn hạn, sinh viên ứng tuyển, nhà trường theo dõi hiệu quả kết nối. Đi trọn vòng BA: phỏng vấn, khảo sát, Validation & Verification, BPMN, DFD, use case, class diagram, ERD.",
+    longDescription:
+      "Ở nhiều trường đại học, thông tin dự án và thực tập nằm rải rác trong Excel, email và nhóm Facebook: sinh viên không biết hồ sơ của mình đang ở trạng thái nào, doanh nghiệp mất nhiều thời gian sàng lọc, nhà trường không có số liệu để đánh giá. UNI-BRIDGE đề xuất một nền tảng tập trung cho ba vai trò (sinh viên, doanh nghiệp, quản trị viên). Nhóm 5 người khảo sát và lấy yêu cầu bằng phỏng vấn và phiếu khảo sát, chuẩn hoá yêu cầu qua Validation & Verification theo tiêu chí SMART, rồi mô hình hoá hệ thống bằng BPMN, DFD, use case, sequence, activity, class diagram và ERD. Kèm theo là bản demo giao diện cho từng vai trò.",
+    image: "/uploads/proj-unibridge.jpg",
+    tags: ["Lấy yêu cầu", "Validation & Verification", "Use Case", "DFD", "ERD"],
+    category: "uiux",
+    featured: true,
+    year: "Đồ án môn Phân tích thiết kế hệ thống",
+    role: "Thành viên (nhóm 5 người)",
+    features: [
+      "Lấy yêu cầu bằng phỏng vấn (sinh viên, doanh nghiệp, phòng Quan hệ doanh nghiệp, quản trị viên) và phiếu khảo sát để xếp mức ưu tiên",
+      "Bảng Validation & Verification: kiểm tra yêu cầu có đúng nhu cầu không và đã đủ rõ để lập trình chưa (tiêu chí SMART)",
+      "32 yêu cầu chức năng chia 7 nhóm, có mã số và mức ưu tiên; 7 yêu cầu phi chức năng",
+      "2 quy trình BPMN (đăng tuyển và duyệt dự án, ứng tuyển và lựa chọn) kèm quy tắc nghiệp vụ và tình huống ngoại lệ",
+      "DFD mức ngữ cảnh, mức 0 và mức 1; 6 use case đặc tả chi tiết; sơ đồ activity và sequence",
+      "Class diagram 9 lớp và ERD cho toàn hệ thống",
+      "Phần mình làm: Validation & Verification, rà soát yêu cầu chức năng, DFD mức 1 quy trình ứng tuyển, class diagram (cùng bạn khác), demo giao diện mẫu trên Figma; thuyết trình phần DFD"
+    ],
+    challenges:
+      "Nhiều yêu cầu thu được ban đầu còn mơ hồ, ví dụ \"thông báo ngay\" hay \"giao diện đẹp\". Nhóm phải viết lại cho đo được: gửi email và thông báo trên web ngay khi doanh nghiệp đổi trạng thái hồ sơ; tối đa 3 click để tới tính năng chính. Đồng thời phải cắt phạm vi (chưa làm thanh toán, AI matching) cho vừa 10 đến 12 tuần."
+  },
+  {
     id: "fitfuel-plus",
     title: "FitFuel+ — Quản lý phòng gym tích hợp AI",
     subtitle: "Đồ án phân tích và thiết kế hệ thống cho một phòng tập gym",

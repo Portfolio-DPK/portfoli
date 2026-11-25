@@ -18,8 +18,11 @@ Sinh viên Hệ thống thông tin quản lý, chuyên ngành Kinh doanh số v�
 
 | Dự án | Môn học | Vai trò | Link |
 |---|---|---|---|
+| **UNI-BRIDGE**: hệ thống kết nối dự án thực tế giữa sinh viên và doanh nghiệp | Phân tích thiết kế hệ thống | Thành viên (nhóm 5 người) | Mô tả trên portfolio |
 | **FitFuel+**: hệ thống quản lý phòng gym tích hợp AI | Phân tích web kinh doanh | Trưởng nhóm (5 thành viên) | [Demo](https://doan-webkinhdoanh.vercel.app/) · [Repository](https://github.com/PTWebKD/full-stack) |
 | **WanderHUB**: website lịch trình du lịch TP.HCM bằng AI | Thương mại điện tử | Trưởng nhóm (5 thành viên) | [Demo](https://wanderhub416tmdt.vercel.app/) · [Repository](https://github.com/Thuongmaidientu416/FE) |
+
+**UNI-BRIDGE**: lấy yêu cầu bằng phỏng vấn và khảo sát, Validation & Verification theo tiêu chí SMART, 32 yêu cầu chức năng, BPMN, DFD, use case, class diagram và ERD. Phần mình phụ trách: Validation & Verification, rà soát yêu cầu chức năng, DFD mức 1 quy trình ứng tuyển, class diagram, giao diện mẫu trên Figma.
 
 **FitFuel+**: bộ tài liệu phân tích nghiệp vụ gồm 73 yêu cầu chức năng, 19 yêu cầu phi chức năng, use case cho 3 vai trò, ERD 53 thực thể, sơ đồ luồng dữ liệu, quy tắc nghiệp vụ và 10 quy trình BPMN; phân tích hai ứng dụng AI (gợi ý dinh dưỡng, danh sách chăm sóc hội viên có nguy cơ rời bỏ).
 
@@ -27,8 +30,9 @@ Sinh viên Hệ thống thông tin quản lý, chuyên ngành Kinh doanh số v�
 
 ## Kỹ năng
 
-- **Phân tích nghiệp vụ:** yêu cầu chức năng và phi chức năng, use case, quy tắc nghiệp vụ
-- **Mô hình hoá:** BPMN, ERD, sơ đồ luồng dữ liệu (draw.io)
+- **Phân tích nghiệp vụ:** yêu cầu chức năng và phi chức năng, use case, user story, quy tắc nghiệp vụ; lấy yêu cầu qua phỏng vấn và khảo sát
+- **Mô hình hoá:** BPMN, DFD, ERD, class, activity, sequence diagram (draw.io); giao diện mẫu trên Figma
+- **Dữ liệu:** SQL cơ bản; Excel cơ bản (pivot table, hàm tra cứu)
 - **AI:** phân tích ứng dụng AI vào nghiệp vụ; dựng giao diện và bản mẫu web bằng vibe coding (công cụ AI)
 - **Làm việc nhóm:** dẫn dắt nhóm 5 người, phân công và theo dõi tiến độ, thống nhất tài liệu
 
