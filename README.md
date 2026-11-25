@@ -31,8 +31,8 @@ Sinh viên Hệ thống thông tin quản lý, chuyên ngành Kinh doanh số v�
 ## Kỹ năng
 
 - **Phân tích nghiệp vụ:** yêu cầu chức năng và phi chức năng, use case, user story, quy tắc nghiệp vụ; lấy yêu cầu qua phỏng vấn và khảo sát
-- **Mô hình hoá:** BPMN, DFD, ERD, class, activity, sequence diagram (draw.io); giao diện mẫu trên Figma
-- **Dữ liệu:** SQL cơ bản; Excel cơ bản (pivot table, hàm tra cứu)
+- **Mô hình hoá:** BPMN, DFD, ERD, use case, class, activity, sequence diagram; wireframe và giao diện mẫu
+- **Công cụ:** draw.io, Figma (cơ bản), Excel (cơ bản: pivot table, hàm tra cứu), SQL (cơ bản), Word, PowerPoint
 - **AI:** phân tích ứng dụng AI vào nghiệp vụ; dựng giao diện và bản mẫu web bằng vibe coding (công cụ AI)
 - **Làm việc nhóm:** dẫn dắt nhóm 5 người, phân công và theo dõi tiến độ, thống nhất tài liệu
 

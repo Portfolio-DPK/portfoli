@@ -84,8 +84,9 @@ export const profileData: ProfileData = {
       "Nhờ công việc part-time ở quán cà phê trong thời gian học đại học, tôi quen việc làm việc với khách hàng: khơi gợi nhu cầu, lắng nghe và ham học hỏi."
     ],
     highlights: [
-      "Viết yêu cầu chức năng và phi chức năng, use case, quy tắc nghiệp vụ",
-      "Mô hình hoá quy trình (BPMN), ERD và sơ đồ luồng dữ liệu bằng draw.io",
+      "Viết yêu cầu chức năng và phi chức năng, use case, user story, quy tắc nghiệp vụ; lấy yêu cầu qua phỏng vấn và khảo sát",
+      "Mô hình hoá BPMN, DFD, ERD, class diagram bằng draw.io; giao diện mẫu trên Figma (cơ bản)",
+      "SQL cơ bản; Excel cơ bản (pivot table, hàm tra cứu)",
       "Phân tích ứng dụng AI vào nghiệp vụ; dựng bản mẫu web bằng vibe coding",
       "Dẫn dắt nhóm 5 người: phân công, theo dõi tiến độ, thống nhất tài liệu"
     ]
