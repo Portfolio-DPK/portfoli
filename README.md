@@ -74,6 +74,5 @@ Form liên hệ mặc định mở ứng dụng email của người xem. Để 
 
 ### Ghi nhận
 
-- Bố cục và hiệu ứng lấy cảm hứng từ portfolio của [Eka Wahyu Maulidan](https://ekawahyu-portofolio.vercel.app/).
 - Hình minh hoạ Người Nhện thuộc về tác giả gốc; Spider-Man là nhân vật của Marvel. Trang này là dự án cá nhân, phi thương mại.
 - Nhạc phát qua trình nhúng chính thức của YouTube, bản quyền thuộc các nghệ sĩ và đơn vị phát hành.
