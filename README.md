@@ -1,102 +1,79 @@
-# 🚀 Portfolio Cá Nhân Hiện Đại (Dark Minimalist Theme)
+# Đỗ Phúc Khang · Portfolio
 
-Website portfolio cá nhân một trang (single-page) hiện đại, tối giản, chủ đề tối (Dark Theme), tích hợp nhiều hiệu ứng chuyển động mượt mà (Framer Motion + Lenis Smooth Scroll) và thiết kế chuẩn Glassmorphism.
+**Ứng tuyển: Thực tập sinh Business Analyst / AI Business Analyst**
 
-Được mô phỏng và nâng cấp toàn diện dựa theo phong cách gốc: [ekawahyu-portofolio.vercel.app](https://ekawahyu-portofolio.vercel.app/).
+Sinh viên Hệ thống thông tin quản lý, chuyên ngành Kinh doanh số và Trí tuệ nhân tạo, Trường Đại học Kinh tế - Luật (ĐHQG TP.HCM). Đây là mã nguồn trang portfolio cá nhân của mình.
 
----
+*Personal portfolio of Đỗ Phúc Khang, a Management Information Systems student looking for a Business Analyst / AI Business Analyst internship.*
 
-## 🛠️ Công Nghệ Sử Dụng
-
-- **Frontend Core:** [React 19](https://react.dev/) + [Vite](https://vite.dev/) + [TypeScript](https://www.typescriptlang.org/)
-- **Styling:** [Tailwind CSS v3](https://tailwindcss.com/)
-- **Animation & Transitions:** [Framer Motion](https://www.framer.com/motion/)
-- **Smooth Scrolling:** [Lenis Smooth Scroll](https://lenis.darkroom.engineering/)
-- **Icons:** [Lucide React](https://lucide.dev/) + SVG Social Icons tối ưu
-- **Hiệu ứng chúc mừng:** Canvas Confetti khi gửi liên hệ thành công
-- **Triển khai:** Tương thích 100% với [Vercel](https://vercel.com/) (Zero Configuration)
+- 🌐 Website: *(đang cập nhật, link Vercel sẽ có ở đây)*
+- 📄 CV: [Tiếng Anh](public/DoPhucKhang_CV_EN.pdf)
+- 💼 LinkedIn: [linkedin.com/in/khang-đỗ-phúc](https://www.linkedin.com/in/khang-%C4%91%E1%BB%97-ph%C3%BAc-868b38451/)
+- 🐙 GitHub: [github.com/phuckhang2903](https://github.com/phuckhang2903)
+- ✉️ Email: khangphuc111@gmail.com
 
 ---
 
-## 📂 Cấu Trúc Thư Mục Dữ Liệu (Dễ Dàng Thay Thế)
+## Dự án tiêu biểu
 
-Toàn bộ nội dung của trang web được tách biệt hoàn toàn trong thư mục `src/data/`. Bạn **không cần phải sửa mã nguồn component**, chỉ cần chỉnh sửa các file TypeScript sau:
+| Dự án | Môn học | Vai trò | Link |
+|---|---|---|---|
+| **FitFuel+**: hệ thống quản lý phòng gym tích hợp AI | Phân tích web kinh doanh | Trưởng nhóm (5 thành viên) | [Demo](https://doan-webkinhdoanh.vercel.app/) · [Repository](https://github.com/PTWebKD/full-stack) |
+| **WanderHUB**: website lịch trình du lịch TP.HCM bằng AI | Thương mại điện tử | Trưởng nhóm (5 thành viên) | [Demo](https://wanderhub416tmdt.vercel.app/) · [Repository](https://github.com/Thuongmaidientu416/FE) |
 
-```
-src/data/
-├── profile.ts       # Thông tin cá nhân, tên, vai trò gõ chữ (typewriter), giới thiệu, mạng xã hội, số liệu thống kê
-├── skills.ts        # Danh sách kỹ năng, nhóm công nghệ (Frontend, Backend, Tools, AI), % thành thục
-├── projects.ts      # Danh sách dự án (ảnh, tên, mô tả ngắn/dài, tag, link Demo, link GitHub, tính năng chi tiết)
-├── experience.ts    # Mốc thời gian kinh nghiệm làm việc và học vấn
-└── certificates.ts  # Danh sách chứng chỉ, đơn vị cấp, ngày cấp, mã xác nhận
-```
+**FitFuel+**: bộ tài liệu phân tích nghiệp vụ gồm 73 yêu cầu chức năng, 19 yêu cầu phi chức năng, use case cho 3 vai trò, ERD 53 thực thể, sơ đồ luồng dữ liệu, quy tắc nghiệp vụ và 10 quy trình BPMN; phân tích hai ứng dụng AI (gợi ý dinh dưỡng, danh sách chăm sóc hội viên có nguy cơ rời bỏ).
 
-### 🖼️ Thư mục hình ảnh (`public/images/`)
-- `public/images/avatar.svg` (hoặc `.png`/`.jpg`): Ảnh đại diện cá nhân
-- `public/images/projects/`: Ảnh chụp màn hình / bìa dự án
-- `public/images/certificates/`: Ảnh chứng chỉ
-- `public/Meta.png`: Ảnh hiển thị khi chia sẻ link lên Facebook, Zalo, Twitter, LinkedIn
+**WanderHUB**: thiết kế mô hình kinh doanh và luồng mua hàng cho dịch vụ lịch trình do AI tạo: 3 gói freemium, thanh toán chuyển khoản QR có bước xác minh, tự đánh giá giao diện theo 10 nguyên tắc dễ dùng của Nielsen.
+
+## Kỹ năng
+
+- **Phân tích nghiệp vụ:** yêu cầu chức năng và phi chức năng, use case, quy tắc nghiệp vụ
+- **Mô hình hoá:** BPMN, ERD, sơ đồ luồng dữ liệu (draw.io)
+- **AI:** phân tích ứng dụng AI vào nghiệp vụ; dựng giao diện và bản mẫu web bằng vibe coding (công cụ AI)
+- **Làm việc nhóm:** dẫn dắt nhóm 5 người, phân công và theo dõi tiến độ, thống nhất tài liệu
 
 ---
 
-## 💻 Hướng Dẫn Chạy Cục Bộ (Local)
+## Về trang web này
 
-### 1. Yêu cầu hệ thống
-- Đã cài đặt [Node.js](https://nodejs.org/) (khuyên dùng bản LTS v18 trở lên).
+Một trang duy nhất, gồm:
 
-### 2. Cài đặt dependencies
-Mở terminal trong thư mục dự án và chạy:
+- **Home:** cảnh thành phố đêm vẽ bằng code, có gió, nhiều lớp chuyển động khi cuộn. Người Nhện treo ngược làm công tắc: kéo dây xuống để bật đèn thành phố, đầu xoay theo chuột, bấm vào có biểu cảm.
+- **About:** giới thiệu, học vấn, ảnh chân dung (rê chuột để hiện bộ đồ Người Nhện) và nút xem CV.
+- **Music:** danh sách nhạc mình hay nghe khi làm việc, phát qua trình nhúng YouTube.
+- **Portfolio:** thẻ dự án kèm ảnh chụp, mô tả và link demo.
+- **Contact:** thông tin liên hệ và form gửi tin nhắn.
+
+Trang được dựng với sự hỗ trợ của công cụ AI.
+
+**Công nghệ:** React 19 · Vite · TypeScript · Tailwind CSS · GSAP + ScrollTrigger · Lenis · Framer Motion
+
+### Chạy trên máy
+
+Cần cài [Node.js](https://nodejs.org/) bản 20 trở lên.
+
 ```bash
 npm install
+npm run dev      # mở http://localhost:5173
+npm run build    # bản build trong thư mục dist/
 ```
 
-### 3. Khởi chạy môi trường phát triển (Dev Server)
-```bash
-npm run dev
-```
-Trình duyệt sẽ mở tại `http://localhost:5173`. Bạn có thể chỉnh sửa code hoặc nội dung và xem kết quả thay đổi tức thì (HMR).
+### Sửa nội dung
 
-### 4. Build kiểm tra bản phát hành (Production Build)
-```bash
-npm run build
-npm run preview
-```
+Nội dung nằm trong `src/data/`, không cần sửa component:
 
----
+| File | Nội dung |
+|---|---|
+| `profile.ts` | Tên, giới thiệu, liên hệ, link CV |
+| `projects.ts` | Danh sách dự án |
+| `experience.ts` | Học vấn |
+| `showcase.ts` | Chứng chỉ, giải thưởng (đang để trống) |
+| `music.ts` | Danh sách bài hát (mã video YouTube) |
 
-## 🌐 Hướng Dẫn Deploy Lên Vercel (Miễn Phí 100%)
+Form liên hệ mặc định mở ứng dụng email của người xem. Để gửi thẳng vào hộp thư, tạo form trên [Formspree](https://formspree.io/) rồi thêm `VITE_FORMSPREE_ID=<mã form>` vào file `.env`.
 
-Dự án đã có sẵn file `vercel.json` tối ưu hóa cho Vite Single-Page Application.
+### Ghi nhận
 
-### Cách 1: Deploy qua GitHub (Khuyên dùng - Tự động cập nhật khi push code)
-1. Đẩy toàn bộ mã nguồn lên một repository mới trên [GitHub](https://github.com/):
-   ```bash
-   git init
-   git add .
-   git commit -m "feat: portfolio initial commit"
-   git branch -M main
-   git remote add origin https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git
-   git push -u origin main
-   ```
-2. Truy cập [vercel.com](https://vercel.com/) và đăng nhập bằng tài khoản GitHub.
-3. Bấm **"Add New..."** -> **"Project"**.
-4. Chọn repository bạn vừa tải lên và bấm **"Import"**.
-5. Vercel sẽ tự động nhận diện **Vite**:
-   - **Framework Preset:** `Vite`
-   - **Build Command:** `npm run build`
-   - **Output Directory:** `dist`
-6. Bấm nút **"Deploy"**. Trong 30 giây, website của bạn sẽ online với tên miền miễn phí dạng `your-portfolio.vercel.app`.
-
-### Cách 2: Deploy trực tiếp bằng Vercel CLI (Không cần qua GitHub)
-Trong terminal tại thư mục dự án:
-```bash
-npx vercel
-```
-Làm theo các bước hỏi nhanh trên terminal (chọn Yes cho các thiết lập mặc định).
-
----
-
-## 🎨 Tùy Chỉnh Nâng Cao
-
-- **Đổi màu chủ đạo (Accent Colors):** Mở file `tailwind.config.js` hoặc `src/index.css` để đổi mã màu gradient (`#8B5CF6`, `#6366F1`, `#06B6D4`...).
-- **Form gửi tin nhắn:** Trong `src/components/Contact.tsx`, bạn có thể nối vào endpoint [Formspree](https://formspree.io/) hoặc [EmailJS](https://www.emailjs.com/) để nhận thông báo trực tiếp về hòm thư điện tử cá nhân.
+- Bố cục và hiệu ứng lấy cảm hứng từ portfolio của [Eka Wahyu Maulidan](https://ekawahyu-portofolio.vercel.app/).
+- Hình minh hoạ Người Nhện thuộc về tác giả gốc; Spider-Man là nhân vật của Marvel. Trang này là dự án cá nhân, phi thương mại.
+- Nhạc phát qua trình nhúng chính thức của YouTube, bản quyền thuộc các nghệ sĩ và đơn vị phát hành.
