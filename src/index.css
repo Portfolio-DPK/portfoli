@@ -1,0 +1,197 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg-primary: #050510;
+  --accent-purple: #8B5CF6;
+  --accent-blue: #3B82F6;
+  --accent-cyan: #06B6D4;
+}
+
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+html {
+  background-color: #050510;
+  color: #F3F4F6;
+  color-scheme: dark;
+  font-family: 'Space Grotesk', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  overflow-x: clip;
+}
+
+body {
+  background-color: #050510;
+  min-height: 100vh;
+  position: relative;
+  overflow-x: clip;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #050510;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(139, 92, 246, 0.3);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(139, 92, 246, 0.6);
+}
+
+/* Glassmorphism Classes */
+.glass-panel {
+  background: rgba(15, 15, 35, 0.65);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.glass-card {
+  background: rgba(13, 13, 30, 0.6);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.glass-card:hover {
+  border-color: rgba(139, 92, 246, 0.4);
+  box-shadow: 0 10px 30px -10px rgba(99, 102, 241, 0.25);
+  transform: translateY(-4px);
+}
+
+.glass-button {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  transition: all 0.25s ease;
+}
+
+.glass-button:hover {
+  background: rgba(255, 255, 255, 0.12);
+  border-color: rgba(255, 255, 255, 0.25);
+}
+
+/* Gradient Text Utilities */
+.text-gradient {
+  background: linear-gradient(135deg, #60A5FA 0%, #A78BFA 50%, #F472B6 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-gradient-cyan {
+  background: linear-gradient(135deg, #22D3EE 0%, #818CF8 50%, #C084FC 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-gradient-purple {
+  background: linear-gradient(135deg, #A855F7 0%, #6366F1 50%, #3B82F6 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Glow Elements */
+.glow-bg {
+  position: absolute;
+  filter: blur(80px);
+  pointer-events: none;
+  z-index: 0;
+  opacity: 0.45;
+}
+
+/* Custom Selection */
+::selection {
+  background-color: rgba(139, 92, 246, 0.35);
+  color: #FFFFFF;
+}
+
+/* ===================== Portfolio v2 (frame-by-frame replica) ===================== */
+html { scroll-behavior: auto !important; }
+html[data-theme='dark'] body { background: #030712; }
+html[data-theme='light'] body { background: #fafafa; }
+body { font-family: Verdana, Geneva, Tahoma, sans-serif; transition: background-color .25s; }
+html.lenis, html.lenis body { height: auto; }
+.lenis.lenis-smooth { scroll-behavior: auto !important; }
+
+/* fixed topographic contour layer */
+.topo-layer {
+  position: fixed; inset: 0; z-index: 0; pointer-events: none;
+  background-color: rgba(148, 163, 184, .2);
+  -webkit-mask: url(/topo.svg) center / cover no-repeat;
+  mask: url(/topo.svg) center / cover no-repeat;
+  transition: background-color .25s;
+}
+html[data-theme='light'] .topo-layer { background-color: rgba(0, 0, 0, .13); }
+html[data-theme='light'] body { font-family: Arial, sans-serif; }
+
+/* mascot blink */
+@keyframes blink { 0%, 92%, 100% { scale: 1 1; } 95% { scale: 1 .15; } }
+.mascot-eye { transform-box: fill-box; transform-origin: center; animation: blink 4s infinite; }
+
+.carousel::-webkit-scrollbar { display: none; }
+.carousel { scrollbar-width: none; }
+
+@media (prefers-reduced-motion: reduce) {
+  .mascot-eye { animation: none; }
+}
+
+
+/* moonlit water shimmer */
+@keyframes shimmer { 0%, 100% { transform: translateX(-6px); opacity: .35; } 50% { transform: translateX(6px); opacity: 1; } }
+.water-shimmer { animation: shimmer 3.2s ease-in-out infinite; transform-box: fill-box; }
+@media (prefers-reduced-motion: reduce) { .water-shimmer { animation: none; } }
+
+/* drifting mist */
+@keyframes fogdrift { from { transform: translateX(-6%); } to { transform: translateX(6%); } }
+.fog-drift { animation: fogdrift 70s ease-in-out infinite alternate; will-change: transform; }
+@media (prefers-reduced-motion: reduce) { .fog-drift { animation: none; } }
+
+/* city beacons, stars, hint arrow */
+@keyframes beacon { 0%, 55%, 100% { opacity: .15; } 70%, 85% { opacity: 1; } }
+.beacon { animation: beacon 2.6s ease-in-out infinite; }
+@keyframes twinkle { 0%, 100% { opacity: .3; } 50% { opacity: 1; } }
+.twinkle { animation: twinkle 3.2s ease-in-out infinite; }
+@keyframes hintbob { 0%, 100% { transform: translateY(0); opacity: .5; } 50% { transform: translateY(6px); opacity: 1; } }
+.hint-bob { animation: hintbob 1.4s ease-in-out infinite; font-size: 16px; line-height: 1; }
+@media (prefers-reduced-motion: reduce) { .beacon, .twinkle, .hint-bob { animation: none; } }
+
+/* About portrait: the Spider-Man cover pulses until the first touch */
+@keyframes spiderman-hint { 0%, 100% { filter: drop-shadow(0 0 0 rgba(239,68,68,0)); transform: scale(1); } 50% { filter: drop-shadow(0 0 22px rgba(239,68,68,.55)); transform: scale(1.012); } }
+.spiderman-hint { animation: spiderman-hint 2.6s ease-in-out infinite; transform-origin: 50% 100%; }
+@media (prefers-reduced-motion: reduce) { .spiderman-hint { animation: none; } }
+
+
+/* equaliser bars in the music playlist */
+@keyframes eq { 0%, 100% { transform: scaleY(.25); } 50% { transform: scaleY(1); } }
+.eq-bar { animation: eq .9s ease-in-out infinite; }
+/* seek bar: blue fill up to --p */
+.music-range { -webkit-appearance: none; appearance: none; background: linear-gradient(to right, #3b82f6 var(--p, 0%), rgba(255,255,255,.18) var(--p, 0%)); border-radius: 999px; outline: none; }
+.music-range::-webkit-slider-thumb { -webkit-appearance: none; width: 12px; height: 12px; border-radius: 50%; background: #fff; box-shadow: 0 0 0 3px rgba(59,130,246,.35); opacity: 0; transition: opacity .15s; }
+.music-range:hover::-webkit-slider-thumb, .music-range:focus-visible::-webkit-slider-thumb { opacity: 1; }
+.music-range::-moz-range-thumb { width: 12px; height: 12px; border: 0; border-radius: 50%; background: #fff; }
+@media (prefers-reduced-motion: reduce) { .eq-bar { animation: none; } }
+
+
+/* reaction pops around the hanging spider */
+@keyframes fxpop { 0% { transform: translate(0,6px) scale(.3); opacity: 0; } 18% { transform: translate(0,-6px) scale(1.15); opacity: 1; } 35% { transform: translate(0,-10px) scale(1); opacity: 1; } 100% { transform: translate(0,-38px) scale(1); opacity: 0; } }
+.fx-a { animation: fxpop 1.7s ease-out both; }
+.fx-b { animation: fxpop 1.7s .12s ease-out both; }
+.fx-c { animation: fxpop 1.7s .24s ease-out both; }
+@keyframes fxz { 0% { transform: translate(0,4px) scale(.6); opacity: 0; } 30% { opacity: 1; } 100% { transform: translate(8px,-26px) scale(1.05); opacity: 0; } }
+.fx-z { animation: fxz 2.2s ease-out infinite both; }
+@keyframes fxspin { to { transform: rotate(360deg); } }
+.fx-spin { animation: fxspin .9s linear infinite; }
+@media (prefers-reduced-motion: reduce) { .fx-a, .fx-b, .fx-c, .fx-z, .fx-spin { animation: none; opacity: 1; } }

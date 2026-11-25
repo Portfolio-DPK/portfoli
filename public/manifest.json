@@ -1,0 +1,16 @@
+﻿{
+  "short_name": "Khang Portfolio",
+  "name": "Đỗ Phúc Khang | Portfolio",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "type": "image/svg+xml",
+      "sizes": "192x192 512x512"
+    }
+  ],
+  "start_url": "/",
+  "background_color": "#050510",
+  "theme_color": "#050510",
+  "display": "standalone"
+}
+

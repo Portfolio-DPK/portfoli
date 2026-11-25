@@ -1,0 +1,40 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# previous owner's personal files (certificates, project shots, school logos) — not used by the site, kept out of the repo
+public/uploads/cert-*
+public/uploads/proj-hology.jpg
+public/uploads/proj-luma.png
+public/uploads/proj-meetra.png
+public/uploads/proj-oceancart.png
+public/uploads/proj-risetin.png
+public/uploads/proj-rujukcepat.png
+public/smkn.png
+public/ub.png
+
+# local env files (never commit secrets)
+.env
+.env.*
+!.env.example
