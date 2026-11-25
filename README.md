@@ -19,7 +19,7 @@ Sinh viên Hệ thống thông tin quản lý, chuyên ngành Kinh doanh số v�
 | Dự án | Môn học | Vai trò | Link |
 |---|---|---|---|
 | **UNI-BRIDGE**: hệ thống kết nối dự án thực tế giữa sinh viên và doanh nghiệp | Phân tích thiết kế hệ thống | Thành viên (nhóm 5 người) | [Báo cáo (PDF)](public/UNI-BRIDGE_baocao_trich.pdf) |
-| **FitFuel+**: hệ thống quản lý phòng gym tích hợp AI | Phân tích web kinh doanh | Trưởng nhóm (5 thành viên) | [Demo](https://doan-webkinhdoanh.vercel.app/) · [Repository](https://github.com/PTWebKD/full-stack) |
+| **FitFuel+**: hệ thống quản lý phòng gym tích hợp AI | Phát triển web kinh doanh | Trưởng nhóm (5 thành viên) | [Demo](https://doan-webkinhdoanh.vercel.app/) · [Báo cáo (PDF)](public/FitFuel_baocao_trich.pdf) · [Repository](https://github.com/PTWebKD/full-stack) |
 | **WanderHUB**: website lịch trình du lịch TP.HCM bằng AI | Thương mại điện tử | Thành viên (nhóm 5 người) | [Demo](https://wanderhub416tmdt.vercel.app/) · [Repository](https://github.com/Thuongmaidientu416/FE) |
 
 **UNI-BRIDGE**: lấy yêu cầu bằng phỏng vấn và khảo sát, Validation & Verification theo tiêu chí SMART, 32 yêu cầu chức năng, BPMN, DFD, use case, class diagram và ERD. Phần mình phụ trách: Validation & Verification, rà soát yêu cầu chức năng, DFD mức 1 quy trình ứng tuyển, class diagram, giao diện mẫu trên Figma.

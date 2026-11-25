@@ -86,8 +86,17 @@ export const projectsData: ProjectItem[] = [
     category: "fullstack",
     liveUrl: "https://doan-webkinhdoanh.vercel.app/",
     githubUrl: "https://github.com/PTWebKD/full-stack",
+    docUrl: "/FitFuel_baocao_trich.pdf",
+    gallery: [
+      { src: "/uploads/fitfuel/arch.jpg", caption: "Kiến trúc tổng thể 3 tầng (phần mình mô tả)" },
+      { src: "/uploads/fitfuel/ai.jpg", caption: "Pipeline AI gợi ý tập luyện và dinh dưỡng (module mình xây)" },
+      { src: "/uploads/fitfuel/usecase.jpg", caption: "Sơ đồ use case tổng thể" },
+      { src: "/uploads/fitfuel/workout.jpg", caption: "BPMN: thực hiện buổi tập và lưu lịch sử tập" },
+      { src: "/uploads/fitfuel/checkout.jpg", caption: "BPMN: xử lý thanh toán web checkout" },
+      { src: "/uploads/fitfuel/erd.jpg", caption: "ERD toàn hệ thống (53 thực thể)" }
+    ],
     featured: true,
-    year: "Đồ án môn Phân tích web kinh doanh (06/2026)",
+    year: "Đồ án môn Phát triển web kinh doanh (06/2026)",
     role: "Trưởng nhóm (5 thành viên)",
     features: [
       "Bộ yêu cầu gồm khoảng 73 yêu cầu chức năng (FR) và 19 yêu cầu phi chức năng (NFR)",
@@ -96,7 +105,7 @@ export const projectsData: ProjectItem[] = [
       "Hơn 10 sơ đồ BPMN: dùng thử, thành viên, onboarding AI, nhật ký tập, gia hạn, giới thiệu, mua và thuê dụng cụ",
       "AI engine: gợi ý dinh dưỡng và hàng đợi chăm sóc (AI Care Queue) cho hội viên có nguy cơ rời bỏ",
       "Gamification với FitCoin, thanh toán sandbox VNPay/MoMo nằm trong yêu cầu hệ thống",
-      "Giao diện demo do mình tự dựng bằng vibe coding (công cụ AI)"
+      "Phần mình làm: dựng giao diện React cho các module chính bằng vibe coding (công cụ AI), module AI gợi ý, tích hợp API với Backend và viết phần mô tả kiến trúc hệ thống"
     ],
     challenges:
       "Giới hạn phạm vi cho một phòng tập (single-tenant) trong thời gian 6 tuần của một nhóm nhỏ, nhưng vẫn phải bao phủ trọn vòng đời hội viên, bán hàng và AI. Tài liệu đặt ra các mục tiêu đo lường như thanh toán của khách dưới 2 phút và gợi ý dinh dưỡng dưới 2 giây."
