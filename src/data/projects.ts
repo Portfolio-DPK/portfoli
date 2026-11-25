@@ -51,9 +51,9 @@ export const projectsData: ProjectItem[] = [
     category: "uiux",
     docUrl: "/UNI-BRIDGE_baocao_trich.pdf",
     gallery: [
-      { src: "/uploads/unibridge/vv.jpg", caption: "Bảng Validation & Verification (phần mình phụ trách)" },
-      { src: "/uploads/unibridge/dfd1.jpg", caption: "DFD mức 1: quy trình ứng tuyển và sàng lọc (phần mình vẽ)" },
-      { src: "/uploads/unibridge/class.jpg", caption: "Class diagram 9 lớp (mình vẽ cùng một thành viên)" },
+      { src: "/uploads/unibridge/vv.jpg", caption: "Bảng Validation & Verification" },
+      { src: "/uploads/unibridge/dfd1.jpg", caption: "DFD mức 1: quy trình ứng tuyển và sàng lọc" },
+      { src: "/uploads/unibridge/class.jpg", caption: "Class diagram 9 lớp" },
       { src: "/uploads/unibridge/bpmn.jpg", caption: "BPMN: quy trình đăng tuyển và duyệt dự án" },
       { src: "/uploads/unibridge/usecase.jpg", caption: "Sơ đồ use case tổng quát" },
       { src: "/uploads/unibridge/erd.jpg", caption: "ERD toàn hệ thống" }
@@ -88,8 +88,8 @@ export const projectsData: ProjectItem[] = [
     githubUrl: "https://github.com/PTWebKD/full-stack",
     docUrl: "/FitFuel_baocao_trich.pdf",
     gallery: [
-      { src: "/uploads/fitfuel/arch.jpg", caption: "Kiến trúc tổng thể 3 tầng (phần mình mô tả)" },
-      { src: "/uploads/fitfuel/ai.jpg", caption: "Pipeline AI gợi ý tập luyện và dinh dưỡng (module mình xây)" },
+      { src: "/uploads/fitfuel/arch.jpg", caption: "Kiến trúc tổng thể 3 tầng" },
+      { src: "/uploads/fitfuel/ai.jpg", caption: "Pipeline AI gợi ý tập luyện và dinh dưỡng" },
       { src: "/uploads/fitfuel/usecase.jpg", caption: "Sơ đồ use case tổng thể" },
       { src: "/uploads/fitfuel/workout.jpg", caption: "BPMN: thực hiện buổi tập và lưu lịch sử tập" },
       { src: "/uploads/fitfuel/checkout.jpg", caption: "BPMN: xử lý thanh toán web checkout" },
