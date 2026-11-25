@@ -46,7 +46,7 @@ export const projectsData: ProjectItem[] = [
     tags: ["Lấy yêu cầu", "Validation & Verification", "Use Case", "DFD", "ERD"],
     category: "uiux",
     featured: true,
-    year: "Đồ án môn Phân tích thiết kế hệ thống",
+    year: "Đồ án môn Phân tích thiết kế hệ thống (03/2026)",
     role: "Thành viên (nhóm 5 người)",
     features: [
       "Lấy yêu cầu bằng phỏng vấn (sinh viên, doanh nghiệp, phòng Quan hệ doanh nghiệp, quản trị viên) và phiếu khảo sát để xếp mức ưu tiên",
@@ -74,7 +74,7 @@ export const projectsData: ProjectItem[] = [
     liveUrl: "https://doan-webkinhdoanh.vercel.app/",
     githubUrl: "https://github.com/PTWebKD/full-stack",
     featured: true,
-    year: "Đồ án môn Phân tích web kinh doanh",
+    year: "Đồ án môn Phân tích web kinh doanh (06/2026)",
     role: "Trưởng nhóm (5 thành viên)",
     features: [
       "Bộ yêu cầu gồm khoảng 73 yêu cầu chức năng (FR) và 19 yêu cầu phi chức năng (NFR)",
@@ -102,8 +102,8 @@ export const projectsData: ProjectItem[] = [
     liveUrl: "https://wanderhub416tmdt.vercel.app/",
     githubUrl: "https://github.com/Thuongmaidientu416/FE",
     featured: true,
-    year: "Đồ án môn Thương mại điện tử",
-    role: "Trưởng nhóm (5 thành viên)",
+    year: "Đồ án môn Thương mại điện tử (06/2026)",
+    role: "Thành viên (nhóm 5 người)",
     features: [
       "Mô hình freemium ba gói (Free, Basic, Premium, Du khách quốc tế); mua gói bằng chuyển khoản QR kèm bước xác minh thanh toán",
       "Công cụ lập lịch trình AI theo tâm trạng, ngân sách, khung giờ, khu vực, sở thích, phương tiện",

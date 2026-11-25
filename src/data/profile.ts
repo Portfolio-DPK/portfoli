@@ -79,7 +79,7 @@ export const profileData: ProfileData = {
   about: {
     greeting: "Xin chào! Tôi là Đỗ Phúc Khang 👋",
     paragraphs: [
-      "Tôi là sinh viên ngành Hệ thống thông tin quản lý, chuyên ngành Kinh doanh số và Trí tuệ nhân tạo tại Trường Đại học Kinh tế - Luật, ĐHQG TP.HCM (GPA 3.2/4.0). Tôi là trưởng nhóm 5 người ở hai đồ án: xây dựng bộ tài liệu phân tích nghiệp vụ (yêu cầu, use case, BPMN, ERD, quy tắc nghiệp vụ), phân tích hướng ứng dụng AI vào quy trình kinh doanh và tự dựng giao diện demo bằng vibe coding. Tôi đang tìm cơ hội thực tập Business Analyst.",
+      "Tôi là sinh viên ngành Hệ thống thông tin quản lý, chuyên ngành Kinh doanh số và Trí tuệ nhân tạo tại Trường Đại học Kinh tế - Luật, ĐHQG TP.HCM (GPA 3.2/4.0). Qua ba đồ án (trưởng nhóm 5 người ở một đồ án), tôi đã xây dựng bộ tài liệu phân tích nghiệp vụ (yêu cầu, use case, BPMN, ERD, quy tắc nghiệp vụ), phân tích hướng ứng dụng AI vào quy trình kinh doanh và tự dựng giao diện demo bằng vibe coding. Tôi đang tìm cơ hội thực tập Business Analyst.",
       "Tôi quan tâm đến việc tìm hiểu bài toán của doanh nghiệp, phân tích và làm rõ yêu cầu, mô hình hoá quy trình nghiệp vụ, rồi đề xuất giải pháp có ứng dụng dữ liệu và AI để đưa ra quyết định tốt hơn.",
       "Nhờ công việc part-time ở quán cà phê trong thời gian học đại học, tôi quen việc làm việc với khách hàng: khơi gợi nhu cầu, lắng nghe và ham học hỏi."
     ],
