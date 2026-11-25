@@ -18,6 +18,10 @@ export interface ProjectItem {
   category: "all" | "frontend" | "fullstack" | "uiux" | "ai";
   liveUrl?: string;
   githubUrl?: string;
+  /** tài liệu thay cho demo (PDF trong public/) */
+  docUrl?: string;
+  /** ảnh sơ đồ / tài liệu hiển thị trong cửa sổ chi tiết */
+  gallery?: { src: string; caption: string }[];
   featured: boolean;
   features: string[];
   challenges?: string;
@@ -45,6 +49,15 @@ export const projectsData: ProjectItem[] = [
     image: "/uploads/proj-unibridge.jpg",
     tags: ["Lấy yêu cầu", "Validation & Verification", "Use Case", "DFD", "ERD"],
     category: "uiux",
+    docUrl: "/UNI-BRIDGE_baocao_trich.pdf",
+    gallery: [
+      { src: "/uploads/unibridge/vv.jpg", caption: "Bảng Validation & Verification (phần mình phụ trách)" },
+      { src: "/uploads/unibridge/dfd1.jpg", caption: "DFD mức 1: quy trình ứng tuyển và sàng lọc (phần mình vẽ)" },
+      { src: "/uploads/unibridge/class.jpg", caption: "Class diagram 9 lớp (mình vẽ cùng một thành viên)" },
+      { src: "/uploads/unibridge/bpmn.jpg", caption: "BPMN: quy trình đăng tuyển và duyệt dự án" },
+      { src: "/uploads/unibridge/usecase.jpg", caption: "Sơ đồ use case tổng quát" },
+      { src: "/uploads/unibridge/erd.jpg", caption: "ERD toàn hệ thống" }
+    ],
     featured: true,
     year: "Đồ án môn Phân tích thiết kế hệ thống (03/2026)",
     role: "Thành viên (nhóm 5 người)",

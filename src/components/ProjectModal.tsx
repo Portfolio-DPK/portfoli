@@ -1,7 +1,7 @@
-﻿import React, { useEffect, useRef } from 'react';
+﻿import React, { useEffect, useRef, useState } from 'react';
 import { createPortal } from 'react-dom';
 import { motion, AnimatePresence } from 'framer-motion';
-import { X, ExternalLink, Check, Calendar, User, Lightbulb, ArrowUpRight } from 'lucide-react';
+import { X, ExternalLink, Check, Calendar, User, Lightbulb, ArrowUpRight, FileText, ZoomIn } from 'lucide-react';
 import type { ProjectItem } from '../data/projects';
 import { GithubIcon } from './SocialIcons';
 import { setPageScrollLocked } from '../lib/smooth';
@@ -18,13 +18,21 @@ interface ProjectModalProps {
  */
 export const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose }) => {
   const open = !!project;
+  const [zoom, setZoom] = useState<{ src: string; caption: string } | null>(null);
+  const zoomRef = useRef(zoom);
+  zoomRef.current = zoom;
   const closeRef = useRef(onClose);
   closeRef.current = onClose;
-  // while the card is open the page behind must not scroll; Esc closes it
+  useEffect(() => setZoom(null), [project]);
+  // while the card is open the page behind must not scroll; Esc closes the zoomed image first, then the card
   useEffect(() => {
     if (!open) return;
     setPageScrollLocked(true);
-    const esc = (e: KeyboardEvent) => e.key === 'Escape' && closeRef.current();
+    const esc = (e: KeyboardEvent) => {
+      if (e.key !== 'Escape') return;
+      if (zoomRef.current) setZoom(null);
+      else closeRef.current();
+    };
     window.addEventListener('keydown', esc);
     return () => {
       setPageScrollLocked(false);
@@ -151,6 +159,35 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose }) 
                 </section>
               )}
 
+              {/* analysis documents (projects without a live demo show their work here) */}
+              {project.gallery && project.gallery.length > 0 && (
+                <section className="space-y-3">
+                  <div className="flex flex-wrap items-baseline justify-between gap-2">
+                    <h4 className="text-[11px] font-bold uppercase tracking-[.16em] text-gray-400">Tài liệu phân tích</h4>
+                    <span className="text-xs text-gray-400">Bấm vào ảnh để xem rõ</span>
+                  </div>
+                  <ul className="grid gap-4 sm:grid-cols-2">
+                    {project.gallery.map((g) => (
+                      <li key={g.src}>
+                        <button
+                          type="button"
+                          onClick={() => setZoom(g)}
+                          className="group block w-full overflow-hidden rounded-2xl border border-gray-200 bg-white text-left transition hover:-translate-y-0.5 hover:border-[#2563eb]/40 hover:shadow-[0_12px_30px_rgba(15,23,42,.12)]"
+                        >
+                          <span className="block aspect-[4/3] overflow-hidden bg-gray-50">
+                            <img src={g.src} alt={g.caption} loading="lazy" className="h-full w-full object-contain p-2 transition-transform duration-500 group-hover:scale-[1.03]" />
+                          </span>
+                          <span className="flex items-start justify-between gap-2 border-t border-gray-100 px-3.5 py-2.5 text-[13px] font-semibold leading-5 text-gray-700">
+                            {g.caption}
+                            <ZoomIn className="mt-0.5 h-4 w-4 shrink-0 text-gray-400 group-hover:text-[#2563eb]" />
+                          </span>
+                        </button>
+                      </li>
+                    ))}
+                  </ul>
+                </section>
+              )}
+
               {/* skills shown */}
               {project.tags.length > 0 && (
                 <section className="space-y-2.5">
@@ -168,8 +205,19 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose }) 
           </div>
 
           {/* sticky actions */}
-          {(project.liveUrl || project.githubUrl) && (
+          {(project.liveUrl || project.githubUrl || project.docUrl) && (
             <div className="flex flex-wrap items-center justify-end gap-3 border-t border-gray-100 bg-white px-5 py-4 sm:px-9">
+              {project.docUrl && (
+                <a
+                  href={project.docUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 rounded-xl bg-[#2563eb] px-6 py-3 text-sm font-bold text-white shadow-[0_10px_24px_rgba(37,99,235,.35)] transition hover:-translate-y-0.5 hover:bg-[#1d4ed8]"
+                >
+                  <FileText className="h-4 w-4" />
+                  Xem báo cáo (PDF)
+                </a>
+              )}
               {project.githubUrl && (
                 <a
                   href={project.githubUrl}
@@ -195,6 +243,27 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose }) 
             </div>
           )}
         </motion.div>
+
+        {/* full-size view of one document image */}
+        {zoom && (
+          <div
+            data-lenis-prevent
+            onClick={() => setZoom(null)}
+            className="fixed inset-0 z-[80] flex flex-col items-center justify-center gap-3 overflow-auto overscroll-contain bg-[#050510]/90 p-3 sm:p-8"
+            role="dialog"
+            aria-label={zoom.caption}
+          >
+            <button
+              onClick={() => setZoom(null)}
+              className="absolute right-4 top-4 grid h-10 w-10 place-items-center rounded-full bg-white text-gray-700 shadow-md transition hover:scale-105 hover:text-[#2563eb]"
+              aria-label="Đóng ảnh"
+            >
+              <X className="h-5 w-5" />
+            </button>
+            <img src={zoom.src} alt={zoom.caption} onClick={(e) => e.stopPropagation()} className="max-h-[84vh] w-auto max-w-full rounded-xl bg-white object-contain shadow-2xl" />
+            <p className="text-center text-sm font-semibold text-white/85">{zoom.caption}</p>
+          </div>
+        )}
       </div>
     </AnimatePresence>,
     document.body,
